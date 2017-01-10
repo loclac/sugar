@@ -16,12 +16,13 @@ import com.orm.util.QueryBuilder;
 import com.orm.util.ReflectionUtil;
 import com.orm.util.SugarCursor;
 
+import java.io.Serializable;
 import java.lang.reflect.Field;
 import java.util.*;
 
 import static com.orm.SugarContext.getSugarContext;
 
-public class SugarRecord {
+public class SugarRecord implements Serializable {
     public static final String SUGAR = "Sugar";
 
     private Long id = null;
